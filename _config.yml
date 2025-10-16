@@ -1,0 +1,9 @@
+title: Aani Beta
+email: beta@aanihub.com
+description: >-
+  Transform your audio into high-quality, human-reviewed content. Join the beta for exclusive access, rewards, and a white-glove experience.
+baseurl: ""
+url: ""
+theme: minima
+plugins:
+  - jekyll-feed
