@@ -117,7 +117,7 @@
       </section>
       <section id="signup" class="glass-pastel rounded-3xl p-10 pastel-shadow mb-10">
         <h2 class="text-2xl font-bold mb-6 text-accent flex items-center"><i class="fas fa-envelope mr-3 text-accent2"></i>Join the Beta Waitlist</h2>
-        <form action="https://formspree.io/f/movkyyqd" method="POST" class="glass-pastel pastel-shadow rounded-2xl p-8 flex flex-col gap-6 w-full max-w-xl mx-auto border border-accent/10">
+        <form id="signup-form" action="https://script.google.com/macros/s/AKfycbxkmE_9EDHkmXb2LALbyqWO4ZheVnTRLRXKdRX1vNpiVdF-Q-0CgvYiz9fxYvp9dBal/exec" method="POST" class="glass-pastel pastel-shadow rounded-2xl p-8 flex flex-col gap-6 w-full max-w-xl mx-auto border border-accent/10">
           <div class="flex flex-col gap-2">
             <label class="font-semibold text-accent mb-1" for="signup-email">Your Email <span class="text-accent3">*</span></label>
             <input type="email" id="signup-email" name="email" required class="px-4 py-3 rounded-lg bg-white/80 border border-accent2 focus:border-accent focus:outline-none text-lg" placeholder="you@email.com">
@@ -201,5 +201,23 @@
         <a href="mailto:beta@aanihub.com" class="underline text-accent">Contact</a>
       </div>
     </footer>
+    <script>
+      document.getElementById('signup-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        fetch(this.action, {
+          method: 'POST',
+          body: formData
+        }).then(response => {
+          if (response.ok) {
+            window.location.href = 'thank-you.html';
+          } else {
+            alert('Something went wrong. Please try again.');
+          }
+        }).catch(error => {
+          alert('Error: ' + error.message);
+        });
+      });
+    </script>
   </body>
 </html>
