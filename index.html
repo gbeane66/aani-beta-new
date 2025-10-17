@@ -1,4 +1,3 @@
-
 <!-- Reformatted for readability: indentation, spacing, and line breaks. No content changes. -->
 
 <!DOCTYPE html>
@@ -119,6 +118,11 @@
         <h2 class="text-2xl font-bold mb-6 text-accent flex items-center"><i class="fas fa-envelope mr-3 text-accent2"></i>Join the Beta Waitlist</h2>
         <form action="https://script.google.com/macros/s/AKfycbxkmE_9EDHkmXb2LALbyqWO4ZheVnTRLRXKdRX1vNpiVdF-Q-0CgvYiz9fxYvp9dBal/exec" method="POST" class="glass-pastel pastel-shadow rounded-2xl p-8 flex flex-col gap-6 w-full max-w-xl mx-auto border border-accent/10">
           <input type="hidden" name="_next" value="https://aanihub.com/thank-you.html">
+          <input type="hidden" name="userAgent" id="signup-user-agent">
+          <input type="hidden" name="ip" id="signup-ip">
+          <input type="hidden" name="geo_city" id="signup-geo-city">
+          <input type="hidden" name="geo_region" id="signup-geo-region">
+          <input type="hidden" name="geo_country" id="signup-geo-country">
           <div class="flex flex-col gap-2">
             <label class="font-semibold text-accent mb-1" for="signup-name">Your Name <span class="text-accent3">(optional)</span></label>
             <input type="text" id="signup-name" name="name" class="px-4 py-3 rounded-lg bg-white/80 border border-accent2 focus:border-accent focus:outline-none text-lg" placeholder="Your name">
@@ -130,6 +134,21 @@
           <div class="border-t border-accent2/20 my-2"></div>
           <button type="submit" class="w-full bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-3 rounded-xl font-bold hover:from-blue-500 hover:to-green-400 transition-all shadow-lg">Join Waitlist</button>
         </form>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('signup-user-agent').value = navigator.userAgent;
+
+            fetch('https://ipapi.co/json/')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('signup-ip').value = data.ip;
+                document.getElementById('signup-geo-city').value = data.city;
+                document.getElementById('signup-geo-region').value = data.region;
+                document.getElementById('signup-geo-country').value = data.country_name;
+              })
+              .catch(error => console.error('Error fetching geo data:', error));
+          });
+        </script>
         <div class="text-xs text-accent2 mt-4 text-center">We respect your privacy. No spam, ever. You’ll get early access and updates only.</div>
         <div class="text-xs text-accent2 mt-1 text-center">Launching soon on <span class="aani-brand font-bold">Aani</span>.</div>
       </section>
