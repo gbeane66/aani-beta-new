@@ -5,8 +5,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts: Nunito for brand name -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Montserrat for headings, Inter for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>Aani Beta – Early Access Audio-to-Content Platform</title>
   <link rel="icon" type="image/svg+xml" href="static/aani_logo_vgood2.svg">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,20 +19,50 @@
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+      :root {
+        --brand-primary: #3F2E8C; /* Deep Indigo */
+        --brand-secondary: #A259F7; /* Electric Purple */
+        --brand-accent: #2EC4B6; /* Emerald Green */
+        --brand-bg: #F7F7FF; /* Soft White */
+        --brand-dark: #22223B; /* Charcoal */
+      }
       body {
-        background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 40%, #d1fae5 100%);
+        background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 40%, var(--brand-accent) 100%);
+        font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        color: var(--brand-dark);
       }
       .glass-pastel {
-        background: rgba(255,255,255,0.92);
+        background: rgba(255,255,255,0.96);
         backdrop-filter: blur(18px);
-        border: 1px solid rgba(55,48,163,0.18);
-        box-shadow: 0 8px 32px rgba(55,48,163,0.10);
+        border: 1px solid var(--brand-primary);
+        box-shadow: 0 8px 32px var(--brand-secondary);
       }
       .pastel-shadow {
-        box-shadow: 0 20px 50px rgba(55,48,163,0.13);
+        box-shadow: 0 20px 50px var(--brand-primary);
       }
       .text-stronger {
-        color: #0f172a;
+        color: var(--brand-dark);
+      }
+      .aani-brand {
+        font-family: 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif !important;
+        letter-spacing: -0.5px;
+        color: var(--brand-primary);
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+        color: var(--brand-primary);
+      }
+      .btn-brand {
+        background: linear-gradient(90deg, var(--brand-accent), var(--brand-secondary));
+        color: #fff;
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+        font-weight: 700;
+        border-radius: 1rem;
+        box-shadow: 0 4px 24px var(--brand-secondary);
+        transition: background 0.3s;
+      }
+      .btn-brand:hover {
+        background: linear-gradient(90deg, var(--brand-secondary), var(--brand-accent));
       }
       .trust-badges img {
         height: 32px;
@@ -40,22 +70,21 @@
         display: inline-block;
         vertical-align: middle;
         border-radius: 9999px !important;
+        border: 2px solid var(--brand-accent);
       }
       .faq-item {
-        border-bottom: 1px solid #e0e7ff;
+        border-bottom: 1px solid var(--brand-secondary);
       }
       .faq-question {
         cursor: pointer;
+        color: var(--brand-primary);
       }
       .faq-answer {
         display: none;
+        color: var(--brand-dark);
       }
       .faq-item.open .faq-answer {
         display: block;
-      }
-      .aani-brand {
-        font-family: 'Nunito', 'Inter', 'Segoe UI', Arial, sans-serif !important;
-        letter-spacing: -0.5px;
       }
     </style>
   </head>
@@ -108,6 +137,7 @@
             <img src="https://img.shields.io/badge/AI%20Augmented-purple?style=flat-square" alt="AI Augmented" />
           </div>
           <a href="#signup" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-10 py-5 rounded-2xl font-extrabold text-xl shadow-lg hover:from-blue-500 hover:to-green-400 transition-all mt-2 mb-2">Request Early Access</a>
+          <a href="#signup" class="inline-block btn-brand px-10 py-5 text-xl mt-2 mb-2">Request Early Access</a>
           <div class="text-xs text-accent2 mt-2">Beta testers get a lifetime 30% discount and early access to premium features after launch. <span class="font-bold text-accent3">Only a few spots left!</span></div>
           <div class="text-xs text-accent2 mt-1">No spam—just early access and updates. Your email is private and never shared.</div>
         </div>
