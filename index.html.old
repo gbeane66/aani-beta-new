@@ -1,0 +1,133 @@
+<!-- Reformatted for readability: indentation, spac          </div>
+        </section>
+        <section class="trust-cards">
+          <div class="trust-grid">
+            <div class="trust-card">
+              <h3 class="trust-title">Privacy‑first</h3>
+              <p class="trust-desc">Audio stays on Aani servers. Third parties receive text only.</p>
+            </div>
+            <div class="trust-card">
+              <h3 class="trust-title">Short retention</h3>
+              <p class="trust-desc">Audio deleted within 7 days. Delete on request anytime.</p>
+            </div>
+            <div class="trust-card">
+              <h3 class="trust-title">Authentic voice</h3>
+              <p class="trust-desc">We preserve your tone via prosody & paralinguistics.</p>
+            </div>
+            <div class="trust-card">
+              <h3 class="trust-title">Evidence‑backed</h3>
+              <p class="trust-desc">Outputs include citations to reputable sources.</p>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+          <div class="testimonial-quote">"<span class="aani-brand">Aani</span> transformed my unscripted audio into clear, well-formatted posts for every platform. Highly recommended!"</div>
+          <div class="testimonial-user">— Early Beta Tester</div>
+        </section>nd line breaks. No content changes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Aani – Transform Your Audio</title>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Montserrat:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <nav class="nav">
+        <div class="nav-logo">
+          <img src="static/aani_logo_vgood2.svg" alt="Aani Logo" style="width:40px;height:40px;background:transparent;" />
+        </div>
+        <div class="nav-links nav-left">
+          <a href="#features">Features</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#signup">Sign Up</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </nav>
+      <main>
+        <section class="hero hero-flex">
+          <div class="hero-content">
+            <h1 class="hero-title">Transform Your Audio Into Content with <span class="aani-brand">Aani</span></h1>
+            <div class="hero-sub">AI-powered, human-reviewed, and privacy-first. Speak, upload, and get high-quality content—fast and tailored to you.</div>
+            <a href="#signup"><button class="hero-btn">Request Early Access</button></a>
+          </div>
+          <div class="hero-video">
+            <video src="static/Demo2.mp4" controls autoplay muted playsinline style="width:100%;height:auto;border-radius:1rem;box-shadow:0 2px 12px rgba(41,121,255,0.10);background:#000;object-fit:cover;"></video>
+          </div>
+        </section>
+        <section class="features" id="features">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-user-check"></i></div>
+            <div class="feature-title">Human-Reviewed</div>
+            <div class="feature-desc">Every submission is checked by real experts for quality and authenticity.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-magic"></i></div>
+            <div class="feature-title">AI-Augmented</div>
+            <div class="feature-desc">Advanced AI for fast, accurate, and personalized results.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-lock"></i></div>
+            <div class="feature-title">Private & Secure</div>
+            <div class="feature-desc">Your data is secure and never shared. Privacy is our priority.</div>
+          </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+          <div class="testimonial-quote">“<span class="aani-brand">Aani</span> transformed my unscripted audio into clear, well-formatted posts for every platform. Highly recommended!”</div>
+          <div class="testimonial-user">— Early Beta Tester</div>
+        </section>
+        <section class="hero" id="signup">
+          <div class="beta-waitlist">
+            <h2 class="hero-title">Join the Beta Waitlist</h2>
+            <form action="https://script.google.com/macros/s/AKfycbxkmE_9EDHkmXb2LALbyqWO4ZheVnTRLRXKdRX1vNpiVdF-Q-0CgvYiz9fxYvp9dBal/exec" method="POST">
+              <input type="hidden" name="_next" value="https://aanihub.com/thank-you.html">
+              <label for="signup-name">Your Name (optional)</label>
+              <input type="text" id="signup-name" name="name">
+              <label for="signup-email">Your Email *</label>
+              <input type="email" id="signup-email" name="email" required>
+              <button type="submit" class="hero-btn">Join Waitlist</button>
+            </form>
+            <div class="waitlist-note">We respect your privacy. No spam, ever. You’ll get early access and updates only.</div>
+          </div>
+        </section>
+
+      <section id="faq" class="faq-block">
+        <div class="faq-container">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary><span>Do you store my audio?</span></summary>
+              <p>Yes, briefly. Audio is processed on Aani-controlled AWS servers and deleted within 7 days of upload by default. You can request earlier deletion.</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Do you send my audio to third parties?</span></summary>
+              <p>No. Paralinguistic and prosody analysis happens on Aani servers. We may use third-party APIs (OpenAI, Gemini) for <em>text-only</em> processing.</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Will you train models on my content?</span></summary>
+              <p>No. We do not sell your content or use your recordings to train public models.</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Can I delete everything?</span></summary>
+              <p>Yes. You can request deletion of audio, derived text, and account data. We’ll action requests unless retention is required by law (e.g., billing records).</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Do you support EU/UK privacy rights?</span></summary>
+              <p>Yes. If GDPR applies, we honor requests for access, rectification, erasure, restriction, objection, and portability. We also use appropriate safeguards for cross-border processing.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      </main>
+      <footer class="footer">
+        &copy; 2025 <span class="aani-brand" style="font-family:'Nunito',Arial,sans-serif;">Aani</span>. All rights reserved. &nbsp;
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="#">Contact</a>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    </body>
+  </html>

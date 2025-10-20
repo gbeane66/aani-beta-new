@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Montserrat:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Aani Beta – Transform Your Audio Into Content</title>
+  <link rel="icon" type="image/svg+xml" href="static/aani_logo_vgood2.svg">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Transform your audio into high-quality, human-reviewed content. Join the Aani beta for early access and lifetime rewards." />
+</head>
+<body>
+  <!-- Navigation -->
+    <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="/" class="nav-logo">
+          <img src="static/aani_logo_vgood2.svg" alt="Aani Logo" height="40" width="40">
+        </a>
+        <div class="nav-links">
+          <a href="#signup" class="nav-link">Sign Up</a>
+          <a href="privacy.html" class="nav-link">Privacy</a>
+        </div>
+      </div>
+      <button class="nav-menu-button md:hidden" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <a href="#signup" class="nav-link">Sign Up</a>
+      <a href="privacy.html" class="nav-link">Privacy</a>
+    </div>
+  </nav>
+  
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.querySelector('.nav-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+      });
+    }
+  </script>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Transform Your Audio Into Content</h1>
+          <p class="hero-subtitle">Speak your thoughts. Get high-quality, researched content—fast, private, and in your authentic voice.</p>
+          
+          <a href="#signup" class="hero-cta">
+            Get Early Access
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-video">
+          <div class="video-container">
+            <video src="static/Demo2.mp4" controls autoplay muted loop playsinline></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust-badges">
+          <div class="trust-badge">
+            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h3>Private & Secure</h3>
+            <p>Your data is encrypted and protected. We never use your content to train AI models.</p>
+          </div>
+          <div class="trust-badge">
+            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <polyline points="16 11 18 13 22 9"></polyline>
+            </svg>
+            <h3>Human Reviewed</h3>
+            <p>Expert reviewers ensure high quality and accurate transcriptions of your content.</p>
+          </div>
+          <div class="trust-badge">
+            <svg class="trust-badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+              <line x1="16" y1="8" x2="2" y2="22"></line>
+              <line x1="17.5" y1="15" x2="9" y2="15"></line>
+            </svg>
+            <h3>AI Augmented</h3>
+            <p>Advanced AI technology helps deliver fast, consistent, and accurate results.</p>
+          </div>
+        </div>
+
+        <a href="#signup" class="btn-primary">Request Early Access</a>
+        <p class="hero-note"><strong>Beta testers get 30% lifetime discount</strong> + early access to premium features</p>
+      </div>
+    </section>
+
+    <!-- Trust Cards -->
+    <section id="trust" class="trust-cards">
+      <h2>Why Trust Aani?</h2>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Privacy-first Design</h3>
+          <p>Your data is encrypted and never used to train AI models. We prioritize your privacy at every step.</p>
+        </div>
+        <div class="trust-card">
+          <i class="fas fa-clock"></i>
+          <h3>Short Data Retention</h3>
+          <p>Audio recordings are deleted within 7 days. We keep only what's necessary, when it's necessary.</p>
+        </div>
+        <div class="trust-card">
+          <i class="fas fa-microphone"></i>
+          <h3>Your Authentic Voice</h3>
+          <p>We preserve your unique speaking style and tone, ensuring content that sounds genuinely like you.</p>
+        </div>
+        <div class="trust-card">
+          <i class="fas fa-book"></i>
+          <h3>Evidence-backed Content</h3>
+          <p>Every claim is researched and cited. Get credible, well-sourced content that stands up to scrutiny.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-user-check"></i>
+          <h3>Human-Reviewed</h3>
+          <p>Every submission is checked by real experts for quality and authenticity.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-magic"></i>
+          <h3>Audio to Content</h3>
+          <p>We turn your spoken ideas into blogs, tweets, LinkedIn posts, and more.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-user-astronaut"></i>
+          <h3>Personalized Style</h3>
+          <p>Advanced AI captures your unique speaking style for authentic, personalized content.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-brain"></i>
+          <h3>AI-Augmented</h3>
+          <p>Cutting-edge AI augments our research, surfacing the best sources with full citations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beta Waitlist -->
+    <section id="signup" class="beta-waitlist">
+      <h2 class="hero-title">Join the Beta Waitlist</h2>
+      <p class="waitlist-subtitle">Be among the first to experience Aani. Get exclusive early access and lifetime rewards.</p>
+      
+      <form action="https://script.google.com/macros/s/AKfycbxkmE_9EDHkmXb2LALbyqWO4ZheVnTRLRXKdRX1vNpiVdF-Q-0CgvYiz9fxYvp9dBal/exec" method="POST">
+        <input type="hidden" name="_next" value="https://aanihub.com/thank-you.html">
+        <input type="hidden" name="userAgent" id="signup-user-agent">
+        <input type="hidden" name="ip" id="signup-ip">
+        
+        <label for="signup-name">Your Name <span>(optional)</span></label>
+        <input type="text" id="signup-name" name="name" placeholder="Your name">
+        
+        <label for="signup-email">Your Email <span class="required">*</span></label>
+        <input type="email" id="signup-email" name="email" required placeholder="you@email.com">
+        
+        <button type="submit" class="btn-primary">Join Waitlist</button>
+      </form>
+      
+      <p class="waitlist-note">No spam, ever. Your email is private and never shared.</p>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          document.getElementById('signup-user-agent').value = navigator.userAgent;
+          fetch('https://ipapi.co/json/')
+            .then(r => r.json())
+            .then(d => {
+              document.getElementById('signup-ip').value = d.ip;
+            })
+            .catch(e => console.error('Geo error:', e));
+        });
+      </script>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-block">
+      <div class="faq-container">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><span>What is Aani and how does it work?</span><i class="fas fa-chevron-down"></i></summary>
+            <p>Aani transforms your audio recordings into high-quality, researched content. Simply record your thoughts, and our AI-augmented system—enhanced by human review—creates blogs, social posts, and more in your authentic voice.</p>
+          </details>
+          
+          <details class="faq-item">
+            <summary><span>How is my privacy protected?</span><i class="fas fa-chevron-down"></i></summary>
+            <p>Your privacy is our top priority. All audio is encrypted in transit and at rest, stored on secure AWS servers, and automatically deleted within 7 days. We never sell your data or use it to train AI models. Read our full <a href="privacy.html">Privacy Policy</a>.</p>
+          </details>
+          
+          <details class="faq-item">
+            <summary><span>Where is my data stored and processed?</span><i class="fas fa-chevron-down"></i></summary>
+            <p>Your data is stored on secure AWS (Amazon Web Services) servers with enterprise-grade security. Processing happens in compliant data centers that meet international privacy standards including GDPR and APPP.</p>
+          </details>
+          
+          <details class="faq-item">
+            <summary><span>How long do you keep my recordings?</span><i class="fas fa-chevron-down"></i></summary>
+            <p>Audio recordings are automatically deleted within 7 days. Processed content (transcripts and outputs) may be retained longer if you choose to save it, but you can request deletion at any time.</p>
+          </details>
+          
+          <details class="faq-item">
+            <summary><span>What benefits do beta testers receive?</span><i class="fas fa-chevron-down"></i></summary>
+            <p>Beta testers receive exclusive lifetime benefits: a 30% discount on all future plans, early access to premium features, priority support, and direct input into product development.</p>
+          </details>
+        </div>
+        
+        <div class="faq-contact">
+          <p>Have more questions? Email us at <a href="mailto:beta@aanihub.com">beta@aanihub.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aani Beta. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="#faq">FAQ</a>
+      <a href="mailto:beta@aanihub.com">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

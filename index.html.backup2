@@ -1,0 +1,260 @@
+<!-- Reformatted for readability: indentation, spacing, and line breaks. No content changes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts: Nunito for brand, Montserrat for headings, Inter for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Montserrat:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Aani Beta – Early Access Audio-to-Content Platform</title>
+  <link rel="icon" type="image/svg+xml" href="static/aani_logo_vgood2.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Aani: Transform your audio into high-quality, human-reviewed content. Join the beta for exclusive access, rewards, and a white-glove experience." />
+    <meta property="og:title" content="Aani Beta – Audio-to-Content Early Access" />
+    <meta property="og:description" content="Transform your audio into ready-to-publish content with AI and human review. Join the Aani beta!" />
+    <meta property="og:image" content="static/aani_logo_vgood2.png" />
+  <meta property="og:image" content="/static/aani_logo_vgood2.png" />
+  <meta property="og:image" content="static/aani_logo_vgood2.png" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      :root {
+        --brand-primary: #2979FF; /* Electric Blue */
+        --brand-secondary: #8F00FF; /* Vivid Purple */
+        --brand-accent: #00E5FF; /* Aqua */
+        --brand-bg: #F7F7FF; /* Soft White */
+        --brand-dark: #22223B; /* Charcoal */
+      }
+      body {
+        background: linear-gradient(135deg, #F7F7FF 0%, #E3F2FD 40%, #E0F7FA 100%); /* very pale blue/aqua gradient */
+        font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        color: var(--brand-dark);
+      }
+      .glass-pastel {
+        background: rgba(255,255,255,0.96);
+        backdrop-filter: blur(18px);
+        border: 1px solid var(--brand-primary);
+        box-shadow: 0 8px 32px var(--brand-secondary);
+      }
+      .pastel-shadow {
+        box-shadow: 0 20px 50px var(--brand-primary);
+      }
+      .text-stronger {
+        color: var(--brand-dark);
+      }
+      .aani-brand {
+        font-family: 'Nunito', 'Montserrat', 'Inter', 'Segoe UI', Arial, sans-serif !important;
+        letter-spacing: -0.5px;
+        color: var(--brand-primary);
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+        color: var(--brand-primary);
+      }
+      .btn-brand {
+        background: linear-gradient(90deg, var(--brand-accent), var(--brand-secondary));
+        color: #fff;
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+        font-weight: 700;
+        border-radius: 1rem;
+        box-shadow: 0 4px 24px var(--brand-secondary);
+        transition: background 0.3s;
+      }
+      .btn-brand:hover {
+        background: linear-gradient(90deg, var(--brand-secondary), var(--brand-accent));
+      }
+      .trust-badges img {
+        height: 32px;
+        margin-right: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 9999px !important;
+        border: 2px solid var(--brand-accent);
+      }
+      .faq-item {
+        border-bottom: 1px solid var(--brand-secondary);
+      }
+      .faq-question {
+        cursor: pointer;
+        color: var(--brand-primary);
+      }
+      .faq-answer {
+        display: none;
+        color: var(--brand-dark);
+      }
+      .faq-item.open .faq-answer {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen text-stronger">
+    <nav class="w-full glass-pastel border-b border-accent/20 sticky top-0 z-30 backdrop-blur">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <img src="static/aani_logo_vgood2.png" alt="Aani Logo" class="w-10 h-10 object-contain pastel-shadow rounded-xl" style="background: transparent;" />
+          <img src="static/aani_logo_vgood2.svg" alt="Aani Logo" class="w-10 h-10 object-contain pastel-shadow rounded-xl" style="background: transparent;" />
+          <div class="flex items-center space-x-2">
+            <span class="aani-brand text-3xl md:text-4xl font-extrabold text-black leading-tight drop-shadow-sm">Aani</span>
+            <span class="text-xs font-semibold bg-blue-100 text-blue-700 px-2 py-0.5 rounded uppercase tracking-wide align-top ml-1" style="letter-spacing:0.05em;">Beta</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-accent2 font-semibold hidden sm:inline">Early Access Program</span>
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-5xl mx-auto py-12 px-4">
+      <section class="glass-pastel rounded-3xl p-10 pastel-shadow mb-10 mt-0">
+        <div class="w-full flex flex-col justify-center">
+          <div class="mb-2 text-xs font-semibold uppercase tracking-widest text-accent3">Beta Access – Limited Spots</div>
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-2 text-accent leading-tight">Transform Your Audio Into Content</h1>
+          <h2 class="text-lg md:text-2xl font-semibold mb-4 text-accent2">Speak. Sign up. Get high-quality, human-reviewed content—fast, private, and tailored to you.</h2>
+          <div class="w-full flex justify-center mb-6">
+            <video
+              src="static/Demo.mp4"
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+              style="width:100%;max-width:420px;height:236px;border-radius:1rem;box-shadow:0 4px 24px rgba(55,48,163,0.10);object-fit:cover;background:#000;"
+              title="Aani Walkthrough Video"
+              poster="static/aani_logo_vgood2.png"
+            >
+              Sorry, your browser does not support embedded videos.
+            </video>
+          </div>
+          <div class="mb-6">
+            <ol class="list-decimal pl-6 text-accent2 space-y-2">
+              <li><b>Sign up with your email</b> to join the waitlist.</li>
+              <li><b>Get notified</b> when the beta launches and be first in line.</li>
+              <li><b>Receive early access</b> and exclusive rewards for beta testers.</li>
+            </ol>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 mb-4 trust-badges">
+            <img src="https://img.shields.io/badge/Private%20%26%20Secure-blue?style=flat-square" alt="Private & Secure" />
+            <img src="https://img.shields.io/badge/Human%20Reviewed-green?style=flat-square" alt="Human Reviewed" />
+            <img src="https://img.shields.io/badge/AI%20Augmented-purple?style=flat-square" alt="AI Augmented" />
+          </div>
+          <a href="#signup" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-10 py-5 rounded-2xl font-extrabold text-xl shadow-lg hover:from-blue-500 hover:to-green-400 transition-all mt-2 mb-2">Request Early Access</a>
+          <a href="#signup" class="inline-block btn-brand px-10 py-5 text-xl mt-2 mb-2">Request Early Access</a>
+          <div class="text-xs text-accent2 mt-2">Beta testers get a lifetime 30% discount and early access to premium features after launch. <span class="font-bold text-accent3">Only a few spots left!</span></div>
+          <div class="text-xs text-accent2 mt-1">No spam—just early access and updates. Your email is private and never shared.</div>
+        </div>
+        <div class="flex flex-1 justify-center items-center min-w-[220px] md:min-w-[320px]">
+        <!-- Logo in second column removed to give more space to main content -->
+      </section>
+      <section id="signup" class="glass-pastel rounded-3xl p-10 pastel-shadow mb-10">
+        <h2 class="text-2xl font-bold mb-6 text-accent flex items-center"><i class="fas fa-envelope mr-3 text-accent2"></i>Join the Beta Waitlist</h2>
+        <form action="https://script.google.com/macros/s/AKfycbxkmE_9EDHkmXb2LALbyqWO4ZheVnTRLRXKdRX1vNpiVdF-Q-0CgvYiz9fxYvp9dBal/exec" method="POST" class="glass-pastel pastel-shadow rounded-2xl p-8 flex flex-col gap-6 w-full max-w-xl mx-auto border border-accent/10">
+          <input type="hidden" name="_next" value="https://aanihub.com/thank-you.html">
+          <input type="hidden" name="userAgent" id="signup-user-agent">
+          <input type="hidden" name="ip" id="signup-ip">
+          <input type="hidden" name="geo_city" id="signup-geo-city">
+          <input type="hidden" name="geo_region" id="signup-geo-region">
+          <input type="hidden" name="geo_country" id="signup-geo-country">
+          <div class="flex flex-col gap-2">
+            <label class="font-semibold text-accent mb-1" for="signup-name">Your Name <span class="text-accent3">(optional)</span></label>
+            <input type="text" id="signup-name" name="name" class="px-4 py-3 rounded-lg bg-white/80 border border-accent2 focus:border-accent focus:outline-none text-lg" placeholder="Your name">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="font-semibold text-accent mb-1" for="signup-email">Your Email <span class="text-accent3">*</span></label>
+            <input type="email" id="signup-email" name="email" required class="px-4 py-3 rounded-lg bg-white/80 border border-accent2 focus:border-accent focus:outline-none text-lg" placeholder="you@email.com">
+          </div>
+          <div class="border-t border-accent2/20 my-2"></div>
+          <button type="submit" class="w-full bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-3 rounded-xl font-bold hover:from-blue-500 hover:to-green-400 transition-all shadow-lg">Join Waitlist</button>
+        </form>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('signup-user-agent').value = navigator.userAgent;
+
+            fetch('https://ipapi.co/json/')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('signup-ip').value = data.ip;
+                document.getElementById('signup-geo-city').value = data.city;
+                document.getElementById('signup-geo-region').value = data.region;
+                document.getElementById('signup-geo-country').value = data.country_name;
+              })
+              .catch(error => console.error('Error fetching geo data:', error));
+          });
+        </script>
+        <div class="text-xs text-accent2 mt-4 text-center">We respect your privacy. No spam, ever. You’ll get early access and updates only.</div>
+        <div class="text-xs text-accent2 mt-1 text-center">Launching soon on <span class="aani-brand font-bold">Aani</span>.</div>
+      </section>
+      <!-- Feature Highlights (White Glove, True Value) -->
+      <section class="grid md:grid-cols-4 gap-6 mb-10">
+        <div class="glass-pastel rounded-2xl p-6 flex flex-col items-start pastel-shadow">
+          <i class="fas fa-user-check text-3xl text-accent mb-3"></i>
+          <h3 class="font-bold text-accent mb-1">Human-Reviewed</h3>
+          <p class="text-accent2 text-left text-sm">Every submission is checked by real experts for quality and authenticity.</p>
+        </div>
+        <div class="glass-pastel rounded-2xl p-6 flex flex-col items-start pastel-shadow">
+          <i class="fas fa-magic text-3xl text-accent mb-3"></i>
+          <h3 class="font-bold text-accent mb-1">Audio to Content</h3>
+          <p class="text-accent2 text-left text-sm">We turn your spoken ideas into blogs, tweets, LinkedIn posts, and more.</p>
+        </div>
+        <div class="glass-pastel rounded-2xl p-6 flex flex-col items-start pastel-shadow">
+          <i class="fas fa-user-astronaut text-3xl text-accent mb-3"></i>
+          <h3 class="font-bold text-accent mb-1">Personalized Style</h3>
+          <p class="text-accent2 text-left text-sm">Advanced AI captures your unique speaking style for authentic, personalized content.</p>
+        </div>
+        <div class="glass-pastel rounded-2xl p-6 flex flex-col items-start pastel-shadow">
+          <i class="fas fa-brain text-3xl text-accent mb-3"></i>
+          <h3 class="font-bold text-accent mb-1">AI-Augmented</h3>
+          <p class="text-accent2 text-left text-sm">Cutting-edge AI augments our research and drafting, surfacing the best sources with full citations.</p>
+        </div>
+      </section>
+      <!-- Trust & Testimonials -->
+      <section class="glass-pastel rounded-3xl p-8 pastel-shadow mb-10">
+        <h2 class="text-xl font-bold text-accent mb-4 flex items-center"><i class="fas fa-star text-yellow-400 mr-2"></i>What Early Testers Say</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div class="bg-pastelMint/60 rounded-2xl p-8 flex flex-col items-center max-w-xs border border-accent/10 shadow-lg">
+            <i class="fas fa-user-circle text-2xl text-accent2 mb-3"></i>
+            <p class="text-accent2 text-base mb-4 text-center">“<span class="aani-brand">Aani</span> transformed my unscripted audio into clear, well-formatted posts for every platform. The content was full of relevant information, well researched, and easy to read. Highly recommended!”</p>
+            <span class="text-xs text-accent font-semibold">— Early Beta Tester</span>
+          </div>
+          <div class="bg-pastelBlue/60 rounded-2xl p-8 flex flex-col items-center max-w-xs border border-accent/10 shadow-lg">
+            <i class="fas fa-user-circle text-2xl text-accent2 mb-3"></i>
+            <p class="text-accent2 text-base mb-4 text-center">“Absolutely amazing! <span class="aani-brand">Aani</span> turned my 10-minute musings into a fully researched, cited, and publication-ready blog post. The process was seamless and the results exceeded my expectations.”</p>
+            <span class="text-xs text-accent font-semibold">— Beta Program User</span>
+          </div>
+        </div>
+        <div class="mt-6 text-center text-accent2 text-xs">Want to be featured? Leave a testimonial below!</div>
+      </section>
+      <!-- FAQ & Contact (White Glove) -->
+      <section class="mt-10 text-center text-accent2" id="faq">
+        <h3 class="text-lg font-bold mb-4 text-accent">Frequently Asked Questions</h3>
+        <div class="max-w-xl mx-auto text-left text-sm mb-6" id="faq-list">
+          <div class="faq-item mb-2">
+            <div class="faq-question font-semibold text-accent" onclick="this.parentNode.classList.toggle('open')">Is my email private?</div>
+            <div class="faq-answer mt-1">Yes! Your email is never shared or sold. We only use it to notify you about beta access and updates.</div>
+          </div>
+          <div class="faq-item mb-2">
+            <div class="faq-question font-semibold text-accent" onclick="this.parentNode.classList.toggle('open')">How do I get access?</div>
+            <div class="faq-answer mt-1">Sign up with your email and you'll be notified as soon as the beta is live.</div>
+          </div>
+          <div class="faq-item mb-2">
+            <div class="faq-question font-semibold text-accent" onclick="this.parentNode.classList.toggle('open')">What is the reward?</div>
+            <div class="faq-answer mt-1">Beta testers get a lifetime 30% discount and early access to premium features after launch.</div>
+          </div>
+          <div class="faq-item mb-2">
+            <div class="faq-question font-semibold text-accent" onclick="this.parentNode.classList.toggle('open')">What does Aani actually do?</div>
+            <div class="faq-answer mt-1">We turn your audio into high-quality, referenced content (blogs, tweets, LinkedIn posts, and more) using deep research and advanced AI to capture your unique style.</div>
+          </div>
+        </div>
+        <p class="mb-2">Want to help even more? Share your excitement on social media or email us at <a href="mailto:beta@aanihub.com" class="underline text-accent">beta@aanihub.com</a></p>
+        <p class="text-xs text-accent3">Your feedback will directly shape the future of <span class="aani-brand">Aani</span>. Thank you!</p>
+      </section>
+    </main>
+    <footer class="bg-pastelGray/80 border-t border-accent2 py-8 mt-16 text-center text-accent2 text-sm">
+      <div class="mb-2">&copy; 2025 Aani Beta. All rights reserved.</div>
+      <div class="flex flex-wrap justify-center gap-4 text-xs mt-2">
+        <a href="#privacy" class="underline text-accent">Privacy Policy</a>
+        <a href="#faq" class="underline text-accent">FAQ</a>
+        <a href="mailto:beta@aanihub.com" class="underline text-accent">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>

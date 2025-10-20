@@ -4,23 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Montserrat:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <title>Aani – Transform Your Audio Into Content</title>
+  <title>Aani Beta – Transform Your Audio Into Content</title>
   <link rel="icon" type="image/svg+xml" href="static/aani_logo_vgood2.svg">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <meta name="description" content="Transform your audio into high-quality, human-reviewed content. Join Aani's beta program for early access and lifetime rewards." />
+  <meta name="description" content="Transform your audio into high-quality, human-reviewed content. Join the Aani beta for early access and lifetime rewards." />
 </head>
 <body>
   <!-- Navigation -->
     <nav class="nav">
     <div class="nav-container">
       <div class="nav-left">
-        <div class="nav-logo">
-          <a href="#hero">
-            <img src="static/aani_logo_vgood2.svg" alt="Aani Logo" height="45" width="45">
-          </a>
-          <span class="logo-text">Aani</span>
-        </div>
+        <a href="#hero" class="nav-logo">
+          <img src="static/aani_logo_vgood2.svg" alt="Aani Logo" height="40" width="40">
+        </a>
         <div class="nav-links">
           <a href="#approach" class="nav-link highlight">Human-Led AI</a>
           <a href="#trust" class="nav-link">Built for Trust</a>
@@ -109,14 +106,6 @@
           
           <p class="emphasis-text">Empowering your voice, amplifying your impact.</p>
         </div>
-        <div class="scroll-indicator">
-          <a href="#trust" class="scroll-down-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 13l5 5 5-5"/>
-              <path d="M7 6l5 5 5-5"/>
-            </svg>
-          </a>
-        </div>
       </div>
     </section>
 
@@ -157,6 +146,72 @@
             </svg>
             <h3>Evidence-backed Content</h3>
             <p>Every claim is researched and cited. Get credible, well-sourced content that stands up to scrutiny.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+        <div class="scroll-indicator">
+          <a href="#how" class="scroll-down-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 13l5 5 5-5"/>
+              <path d="M7 6l5 5 5-5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipeline -->
+    <section id="how" class="screen-section pipeline">
+      <div class="container">
+        <h2 class="section-title gradient-text">How Aani Works</h2>
+        <div class="pipeline-grid">
+                    <div class="pipeline-step">
+            <div class="step-number">1</div>
+            <h3>Your Spoken Ideas</h3>
+            <p>Share your thoughts naturally through speech</p>
+            <div class="step-arrow">
+              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1L19 6L14 11M1 6H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-number">2</div>
+            <h3>Ideas Structured</h3>
+            <p>We collaborate with you to organize your thoughts for maximum impact</p>
+            <div class="step-arrow">
+              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1L19 6L14 11M1 6H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-number">3</div>
+            <h3>Research Enrichment</h3>
+            <p>We strengthen your message with relevant insights and sources</p>
+            <div class="step-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-number">4</div>
+            <h3>Refinement</h3>
+            <p>We help you express your ideas more clearly</p>
+            <div class="step-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-number">5</div>
+            <h3>Human Review</h3>
+            <p>Expert feedback ensures quality</p>
           </div>
         </div>
         <div class="scroll-indicator">
@@ -249,78 +304,6 @@
             <p>Support your ideas with comprehensive research and compelling evidence that builds credibility.</p>
           </div>
         </div>
-        <div class="scroll-indicator">
-          <a href="#how" class="scroll-down-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 13l5 5 5-5"/>
-              <path d="M7 6l5 5 5-5"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pipeline -->
-    <section id="how" class="screen-section pipeline">
-      <div class="container">
-        <h2 class="section-title gradient-text">How Aani Works</h2>
-        <div class="pipeline-grid">
-                    <div class="pipeline-step">
-            <div class="step-number">1</div>
-            <h3>Your Spoken Ideas</h3>
-            <p>Share your thoughts naturally through speech</p>
-            <div class="step-arrow">
-              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 1L19 6L14 11M1 6H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-          </div>
-          <div class="pipeline-step">
-            <div class="step-number">2</div>
-            <h3>Ideas Structured</h3>
-            <p>We collaborate with you to organize your thoughts for maximum impact</p>
-            <div class="step-arrow">
-              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 1L19 6L14 11M1 6H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-          </div>
-          <div class="pipeline-step">
-            <div class="step-number">3</div>
-            <h3>Research Enrichment</h3>
-            <p>We strengthen your message with relevant insights and sources</p>
-            <div class="step-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-          </div>
-          <div class="pipeline-step">
-            <div class="step-number">4</div>
-            <h3>Refinement</h3>
-            <p>We help you express your ideas more clearly</p>
-            <div class="step-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-          </div>
-          <div class="pipeline-step">
-            <div class="step-number">5</div>
-            <h3>Human Review</h3>
-            <p>Expert feedback ensures quality</p>
-          </div>
-        </div>
-        <div class="scroll-indicator">
-          <a href="#signup" class="scroll-down-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 13l5 5 5-5"/>
-              <path d="M7 6l5 5 5-5"/>
-            </svg>
-          </a>
-        </div>
       </div>
     </section>
 
@@ -350,14 +333,6 @@
         
         <p class="waitlist-note">No spam, ever. Your email is private and never shared.</p>
         <p class="waitlist-note highlight">Beta testers get 30% lifetime discount + early access to premium features</p>
-        <div class="scroll-indicator">
-          <a href="#faq" class="scroll-down-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 13l5 5 5-5"/>
-              <path d="M7 6l5 5 5-5"/>
-            </svg>
-          </a>
-        </div>
       </div>
       
       <script>
@@ -376,7 +351,7 @@
     <!-- FAQ -->
     <section id="faq" class="screen-section faq-block">
       <div class="faq-container">
-        <h2 class="section-title gradient-text">Frequently Asked Questions</h2>
+        <h2 class="faq-title gradient-text">Frequently Asked Questions</h2>
         <div class="faq-list">
           <details class="faq-item">
             <summary><span>What is Aani and how does it work?</span><i class="fas fa-chevron-down"></i></summary>
@@ -412,7 +387,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Aani. All rights reserved.</p>
+    <p>&copy; 2025 Aani Beta. All rights reserved.</p>
     <div class="footer-links">
       <a href="privacy.html">Privacy Policy</a>
       <a href="#faq">FAQ</a>
